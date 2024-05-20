@@ -24,7 +24,7 @@ export default function Player() {
 
   useEffect(() => {
     console.log("1 socket connection effect");
-    socket.current = io.connect("http://192.168.0.184:5000", {
+    socket.current = io.connect("http://localhost:5000", {
       transports: ["websocket"],
     });
     console.log(socket.current);
